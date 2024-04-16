@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ordenar Valores</title>
+</head>
+<body>
+<h1>Ordenar Valores</h1>
+<script>
+    function ordenarValores() {
+        var valores = [];
+        for (var i = 1; i <= 5; i++) {
+            var valor = parseFloat(document.getElementById('valor' + i).value);
+            valores.push(valor);
+        }
+        valores.sort(function(a, b){return a - b});
+        alert("Valores em ordem crescente: " + valores.join(", "));
+    }
+</script>
+<label for="valor1">Valor 1:</label>
+<input type="number" id="valor1"><br><br>
+<label for="valor2">Valor 2:</label>
+<input type="number" id="valor2"><br><br>
+<label for="valor3">Valor 3:</label>
+<input type="number" id="valor3"><br><br>
+<label for="valor4">Valor 4:</label>
+<input type="number" id="valor4"><br><br>
+<label for="valor5">Valor 5:</label>
+<input type="number" id="valor5"><br><br>
+<button onclick="ordenarValores()">Ordenar</button><br><br>
+</body>
+</html>

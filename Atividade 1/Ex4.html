@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verificar Paridade</title>
+</head>
+<body>
+<h1>Verificar Paridade</h1>
+<script>
+    function verificarParidade() {
+        var valor = parseInt(document.getElementById('valor').value);
+        if (valor % 2 === 0) {
+            alert("O valor é par.");
+        } else {
+            alert("O valor não é par.");
+        }
+    }
+</script>
+<label for="valor">Valor:</label>
+<input type="number" id="valor"><br><br>
+<button onclick="verificarParidade()">Verificar</button><br><br>
+</body>
+</html>

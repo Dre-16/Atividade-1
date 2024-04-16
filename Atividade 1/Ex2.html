@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcular Quadrado</title>
+</head>
+<body>
+<h1>Calcular Quadrado</h1>
+<script>
+    function calcularQuadrado() {
+        var valor1 = parseFloat(document.getElementById('valor1').value);
+        var valor2 = parseFloat(document.getElementById('valor2').value);
+        var valor3 = parseFloat(document.getElementById('valor3').value);
+        var quadrado1 = valor1 * valor1;
+        var quadrado2 = valor2 * valor2;
+        var quadrado3 = valor3 * valor3;
+        alert("Quadrado do Valor 1: " + quadrado1 + ", Quadrado do Valor 2: " + quadrado2 + ", Quadrado do Valor 3: " + quadrado3);
+    }
+</script>
+<label for="valor1">Valor 1:</label>
+<input type="number" id="valor1"><br><br>
+<label for="valor2">Valor 2:</label>
+<input type="number" id="valor2"><br><br>
+<label for="valor3">Valor 3:</label>
+<input type="number" id="valor3"><br><br>
+<button onclick="calcularQuadrado()">Calcular</button><br><br>
+</body>
+</html>
